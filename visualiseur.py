@@ -23,7 +23,6 @@ if fichier is not None:
         st.bar_chart(
             df,
             x="categorie",
-            y="valeur"
-        )
+            y="valeur")
 
 

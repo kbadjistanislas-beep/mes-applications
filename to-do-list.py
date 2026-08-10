@@ -18,3 +18,4 @@ for i,tach in enumerate(taches):
         tach["terminee"] = st.checkbox(f'{tach["titre"]} ({tach["priorite"]})', tach["terminee"],key=i)
 sauvegarder_taches(taches)
 st.progress(sum(tach["terminee"] for tach in taches) / len(taches) if taches else 0)
+st.balloons()
