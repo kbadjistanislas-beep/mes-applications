@@ -42,4 +42,4 @@ st.subheader("fonctions scientifiques")
 c1,c2,c3,c4,c5 = st.columns(5)
 with c1:
         if st.button():
-                s
+                sientist = st.button
