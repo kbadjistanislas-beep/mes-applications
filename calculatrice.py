@@ -28,25 +28,26 @@ def bouton(valeur):
         st.sesion_state.calcul += valeur 
 coln1,coln2,coln3,coln4 =st.columns(4)
 with coln1:
-        if st.button("7"):bouton("7")
-        if st.button("4"):bouton("4")
-        if st.button("1"):bouton("1")
-        if st.button("0"):bouton("0")
+        for bouton in ['7', '4', '1', '0']:
+            if st.button(bouton):
+                st.session_state.calcul += bouton
+                st.rerun()  
+
 with coln2:
-        if st.button("8"):bouton("8")
-        if st.button("5"):bouton("5")
-        if st.button("2"):bouton("2")
-        if st.button("."):bouton(".")
+        for bouton in ['8', '5', '2', '.']:
+            if st.button(bouton):
+                st.session_state.calcul += bouton
+                st.rerun()  
 with coln3:
-        if st.button("9"):bouton("9")
-        if st.button("6"):bouton("6")
-        if st.button("3"):bouton("3")
-        if st.button("+"):bouton("+")
+       for bouton in ['9', '6', '3', '+']:
+        if st.button(bouton):
+            st.session_state.calcul += bouton
+            st.rerun()  
 with coln4:
-        if st.button("/"):bouton("/")
-        if st.button("*"):bouton("*")
-        if st.button("-"):bouton("-")
-        if st.button("4"):bouton("4")
+        for bouton in ['/', '*', '-', '..']:
+            if st.button(bouton):
+                st.session_state.calcul += bouton
+                st.rerun()  
 if st.button("AC"):
         st.session_state.calcul = ""
         st.rerun()
