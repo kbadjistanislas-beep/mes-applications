@@ -142,3 +142,12 @@ for calcul in reversed(st.session_state.historique):
 if st.button("🗑️ Effacer l'historique"):
     st.session_state.historique = []
     st.rerun()
+
+
+
+
+
+
+
+
+    st.balloons()
