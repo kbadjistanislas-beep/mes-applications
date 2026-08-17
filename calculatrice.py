@@ -25,7 +25,7 @@ st.text_input(
 )
 angle = st.radio("Mode angle", ["Degrés", "Radians"], horizontal=True)
 def bouton(valeur):
-        st.sesion_state.calcul += valeur 
+        st.session_state.calcul += valeur 
 coln1,coln2,coln3,coln4 =st.columns(4)
 with coln1:
         for boton in ['7', '4', '1', '0']:
