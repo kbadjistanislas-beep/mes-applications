@@ -1,6 +1,6 @@
 import streamlit as st
 import math
-import ploty.graph_objects as np
+import plotly.graph_objects as np
 import numpy as np
 if "historique" not in st.session_state:
     st.session_state.historique = []
@@ -142,12 +142,3 @@ for calcul in reversed(st.session_state.historique):
 if st.button("🗑️ Effacer l'historique"):
     st.session_state.historique = []
     st.rerun()
-
-
-
-
-
-
-
-
-    st.balloons()

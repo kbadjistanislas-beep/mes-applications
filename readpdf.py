@@ -10,7 +10,7 @@ if uploader and pdf :
         f.write(pdf.getvalue())
     docu = flitz.open("document.pdf")
     st.success("PDF importer ")
-    st.writte(f"{len(docu)} pages")
+    st.write(f"{len(docu)} pages")
     st.divider()
     st.subheader("📊 Informations du PDF")
 
