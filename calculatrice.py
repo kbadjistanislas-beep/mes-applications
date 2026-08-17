@@ -28,26 +28,24 @@ def bouton(valeur):
         st.sesion_state.calcul += valeur 
 coln1,coln2,coln3,coln4 =st.columns(4)
 with coln1:
-        for bouton in ['7', '4', '1', '0']:
-            if st.button(bouton):
-                st.session_state.calcul += bouton
-                st.rerun()  
+        for boton in ['7', '4', '1', '0']:
+            if st.button(boton):
+                bouton(boton)
+                
 
 with coln2:
-        for bouton in ['8', '5', '2', '.']:
-            if st.button(bouton):
-                st.session_state.calcul += bouton
-                st.rerun()  
+        for boton in ['8', '5', '2', '.']:
+            if st.button(boton):
+                 bouton(boton)
 with coln3:
-       for bouton in ['9', '6', '3', '+']:
-        if st.button(bouton):
-            st.session_state.calcul += bouton
-            st.rerun()  
+       for boton in ['9', '6', '3', '+']:
+        if st.button(boton):
+             bouton(boton)
+            
 with coln4:
-        for bouton in ['/', '*', '-', '..']:
-            if st.button(bouton):
-                st.session_state.calcul += bouton
-                st.rerun()  
+        for boton in ['/', '*', '-', '..']:
+            if st.button(boton):
+                bouton(boton)  
 if st.button("AC"):
         st.session_state.calcul = ""
         st.rerun()
