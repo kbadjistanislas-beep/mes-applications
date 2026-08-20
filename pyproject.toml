@@ -5,5 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "flitz>=0.0.7",
+    "pypdf>=6.16.1",
     "streamlit>=1.60.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "LLM",
+    "LLM/manage",
 ]
