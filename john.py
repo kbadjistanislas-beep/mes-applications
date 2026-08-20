@@ -13,17 +13,23 @@ st.set_page_config(
 
 # Définition des pages avec des chemins relatifs depuis la racine
 visit_card = st.Page("app.py", title="Carte de visite", icon="📇")
-quiz = st.Page("Quiz.py", title="Quiz", icon="❓")
+
 convert = st.Page('convertir.py', title = 'Convertisseur', icon='🧮')
 calculatrice = st.Page('calculatrice.py', title='Calculatrice', icon='➕')
 data = st.Page('explorateur.py', title='Data Explorer', icon='🔢')
 todolist =  st.Page('to-do-list.py', title='Ma to-do', icon='👌')
 passe =  st.Page('password.py', title='Mot de passe', icon='🤞')
 visual = st.Page('visualiseur.py', title='View', icon='🥸')
-meteo = st.Page('Dashboard.py', title='Météo', icon='⛈️')
+meteo = st.Page('dashboard.py', title='Météo', icon='⛈️')
 social = st.Page('rocial.py', title='Reseau social', icon='🤖')
+fus = st.Page(
+    "fusion.py",
+    title="Fusionneur de PDF",
+    icon=":material/picture_as_pdf:"
+)
+
 # Configuration de la navigation
-pg = st.navigation([visit_card, quiz, convert, calculatrice, data, todolist, meteo, passe,social,visual])
+pg = st.navigation([visit_card, convert, calculatrice, data, todolist, meteo, passe,social,visual,fus])
 
 # Exécution de la page sélectionnée
 pg.run()

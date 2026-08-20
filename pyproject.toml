@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "flitz>=0.0.7",
+    "matplotlib>=3.11.1",
+    "plotly>=6.9.0",
     "pypdf>=6.16.1",
     "streamlit>=1.60.0",
 ]
